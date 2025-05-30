@@ -1,84 +1,74 @@
-Task 2: Language-Agnostic Emotion Classification from Speech Files
+📝 Task 3: GPT-4o – Image Description Using API
 
-"For Task 2, I received .wav speech files from the SpeechX team. My objective was to perform language-agnostic emotion classification.
+✅ What I’ve Done So Far
 
-Since ML-related operations couldn't be performed in the BNP environment, I designed the entire approach and executed the model training and evaluation on my personal laptop. I shared the GitHub repository link with Barani for reference.
+🔹 Objective:
+Use the GPT-4o model to generate a description of an image by sending a request with the image in base64 format.
 
+🔹 Tools Used:
 
----
+Postman (for API testing)
 
-My Approach:
-
-1. Model Used:
-
-Pretrained Model: firdhokk/speech-emotion-recognition-with-openai-whisper-large-v3 (Hugging Face)
-
-Datasets: RAVDESS, SAVEE, TESS, URDU
-
-Emotion Labels: Angry, Disgust, Fearful, Happy, Neutral
-
-Achieved Accuracy: 91.99%
+GPT-4o Model endpoint
 
 
+🔹 Steps Completed:
 
-2. I also experimented with 4 other pre-trained models to ensure robustness and comparative performance.
+1. Converted a local PNG image to a base64 string using Python.
 
 
+2. Created a valid JSON request body for GPT-4o:
 
+Embedded the base64-encoded image using data:image/png;base64,...
 
----
-
-Workflow:
-
-1. Data Preparation and Baseline Models
-
-Preprocessed and labeled datasets
-
-Evaluated multiple pre-trained models
-
-Selected the best model based on accuracy and generalization
+Added a text prompt: “Describe this image.”
 
 
 
-2. Fine-tuning Pre-trained Models
-
-Fine-tuned the selected model with a smaller, curated dataset
-
-Evaluated performance for signs of overfitting or improvement
+3. Sent the request through Postman using the correct OAuth2 credentials.
 
 
-
-3. Training a New Model
-
-Configured a model to train from scratch
-
-Required larger datasets and more tuning
-
-Tested and validated results
-
-
-
-4. Comparison and Final Decision
-
-Compared metrics from all models and approaches
-
-Finalized the best-performing method and documented it
-
+4. Successfully received and viewed a response from the GPT-4o model describing the image.
 
 
 
 
 ---
 
-Self-Initiated Learning: Music Classification Project
+🧪 Example Output Received from Model:
 
-"In parallel, to strengthen my understanding of Hugging Face’s audio tools, I followed a music classification tutorial from the official Hugging Face Audio Course. I fine-tuned a lightweight encoder-only transformer model using a small dataset on Google Colab’s free T4 GPU.
+> “This image appears to show a bar chart with sales data categorized by month…”
 
-This was a self-learning exercise to build confidence with Hugging Face workflows—such as dataset preprocessing, model fine-tuning, and evaluation—which helped me apply those learnings to my main emotion classification task."
+
+
+(Replace with your actual output)
 
 
 ---
 
-Next Steps:
+🧭 What’s Next (To Be Done in Python)
 
-"I'm exploring how this emotion classification model can be integrated with BNP systems, subject to overcoming the current infrastructure constraints."
+I will now automate this entire workflow using Python:
+
+1. Store credentials securely in a .env file
+
+
+2. Use OAuth2 client credentials to programmatically fetch access token
+
+
+3. Convert image to base64 and format it as a data URL
+
+
+4. Send request to the GPT-4o endpoint from the script
+
+
+5. Print or store the description received from the model
+
+
+
+
+---
+
+🎯 Goal:
+
+Once done, this will eliminate manual steps and allow batch/image automation through code, which can later be integrated into a larger pipeline or UI.
