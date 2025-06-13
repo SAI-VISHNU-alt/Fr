@@ -1,27 +1,2 @@
-| **Acronym**  | **Full Form**                                              |
-| ------------ | ---------------------------------------------------------- |
-| API          | Application Programming Interface                          |
-| CSV          | Comma-Separated Values                                     |
-| JSON         | JavaScript Object Notation                                 |
-| UI           | User Interface                                             |
-| ML           | Machine Learning                                           |
-| NLP          | Natural Language Processing                                |
-| JWT          | JSON Web Token                                             |
-| URL          | Uniform Resource Locator                                   |
-| PNG          | Portable Network Graphics                                  |
-| OAuth2       | Open Authorization 2.0                                     |
-| VS Code      | Visual Studio Code                                         |
-| Jupyter      | Julia Python R (Jupyter) Lab                               |
-| GPT          | Generative Pre-trained Transformer                         |
-| RAVDESS      | Ryerson Audio-Visual Database of Emotional Speech and Song |
-| SAVEE        | Surrey Audio-Visual Expressed Emotion                      |
-| TESS         | Toronto Emotional Speech Set                               |
-| URDU         | Urdu Speech Emotion Dataset                                |
-| BNP          | BNP Paribas (Mention full name once)                       |
-| ID           | Identifier                                                 |
-| SDK          | Software Development Kit                                   |
-| CLI          | Command Line Interface                                     |
-| AI           | Artificial Intelligence                                    |
-| REST         | Representational State Transfer                            |
-| GraphQL      | Graph Query Language                                       |
-| Hugging Face | (Name of the platform; not an acronym)                     |
+
+As part of an advanced learning initiative in speech-based AI classification, we conducted an in-depth study on the development of a Language-Agnostic Emotion Classification model. Instead of implementing the full training pipeline due to infrastructure limitations, our focus shifted toward understanding and documenting the methodologies required to achieve such a task. We thoroughly explored publicly available multilingual speech emotion datasets and surveyed existing open-source models available on platforms like Hugging Face. Our work included a detailed analysis of preprocessing techniques, feature extraction methods (such as MFCC and spectrograms), and model architectures commonly used in emotion recognition from speech, including CNNs, RNNs, and transformer-based models. The outcome was a comprehensive technical documentation outlining the step-by-step process to build and evaluate a language-independent emotion classification system, which can serve as a practical guide for future implementations or research extensions.
