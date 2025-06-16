@@ -1,10 +1,2 @@
 
-Subject: Request for Approval of Internship Report
-
-Dear Barani,
-
-I hope you are doing well.
-
-I am writing to kindly request your approval for my internship report, which I am submitting as part of the course completion requirements. I have documented the work and contributions made during the internship period, and I have ensured that all necessary details are included.
-
-I have attached the report for your review. Please let me know if any modifications are required. Once approved, I will proceed with the submission in the portal.
+The internship provided a meaningful platform to apply data-driven approaches to practical problems, particularly in the area of speech-based emotion classification. I explored various pre-trained models available on Hugging Face, assessing their suitability for language-agnostic emotion detection tasks. As part of this effort, I designed and documented a detailed methodology outlining data preprocessing steps, model evaluation strategies, and performance comparison criteria. The process helped me strengthen my understanding of model selection, fine-tuning, and evaluation using tools like Python and Jupyter Lab, while aligning my work with the project’s overall objectives through regular reviews and feedback sessions.
